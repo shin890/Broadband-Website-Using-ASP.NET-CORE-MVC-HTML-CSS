@@ -1,0 +1,453 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #68D7F3;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #6F42F5;
+    }
+
+.head {
+    position: fixed;
+    border-bottom: 8px solid orange;
+    min-width: 100%;
+    height: 150px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(111, 16, 245, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    z-index: 3;
+}
+
+    .head .content {
+        position: relative;
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: 0.5fr 1.6fr 3.2fr;
+    }
+
+        .head .content img {
+            position: inherit;
+            margin-left: 100px;
+            border-radius: 30px;
+            height: 80px;
+        }
+
+        .head .content .name h1 {
+            font-weight: 500;
+            color: white;
+        }
+
+
+        .head .content .navbar ul {
+            float: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            margin-right: 100px;
+        }
+
+        .head .content .navbar li {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 30px;
+        }
+
+        .head .content .navbar a {
+            text-decoration: none;
+        }
+
+            .head .content .navbar a h1 {
+                transition: 0.4s ease;
+                font-weight: 500;
+                padding: 8px;
+                color: white;
+                font-size: 1.3em;
+            }
+
+
+                .head .content .navbar a h1:hover {
+                    background-color: orange;
+                    border-radius: 6px;
+                    border-bottom: 5px solid blue;
+                }
+
+
+.container1 {
+    position: relative;
+    height: 100vh;
+    margin-top: 30vh;
+    margin-left: 10vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+    .container1 .text h1,
+    .container1 .text h2,
+    .container1 .text h3 {
+        font-size: 4em;
+        color: rgb(111, 66, 245);
+        border: 30px solid transparent;
+        background-color: azure;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+        .container1 .text h1:hover {
+            background-color: rgb(111, 66, 245);
+            color: white;
+        }
+
+    .container1 .text h2 {
+        font-size: 2em;
+    }
+
+    .container1 .text h3 {
+        font-size: 1.5em;
+    }
+
+    .container1 .text h2:hover {
+        background-color: rgb(111, 66, 245);
+        color: white;
+    }
+
+    .container1 .text h3:hover {
+        background-color: rgb(111, 66, 245);
+        color: white;
+    }
+
+
+
+    .container1 .gif img {
+        margin-left: 20vh;
+        border-radius: 50%;
+        transition: 0.5s ease-in-out;
+    }
+
+
+/*Second Page Starts here*/
+.container2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+    .container2 .text {
+        margin-left: 10%;
+    }
+
+        .container2 .text h1 {
+            font-size: 3.5rem;
+        }
+
+        .container2 .text h2 {
+            margin-top: 10px;
+            font-size: 2.5em;
+            color: rgb(111, 66, 245);
+            border: 0px;
+            background-color: transparent;
+        }
+
+
+.flexcol > div {
+    border: 5px solid #dce4df;
+    margin-left: 10vw;
+    margin-bottom: 1vw;
+    width: 80vw;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.flexrow {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+    .flexrow > div {
+        padding: 50px;
+    }
+
+.speedbox {
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px 30px 0px 30px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    background-color: #2596be;
+}
+
+.vl {
+    margin-left: 30px;
+    margin-top: 150px;
+    margin-right: 30px;
+    border-left: 6px solid #b2b5be;
+    height: 180px;
+    border-radius: 2px;
+}
+
+.flexrow ul {
+    color: #4e4f4e;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 10px;
+    list-style: none;
+}
+
+    .flexrow ul li {
+        margin-bottom: 25px;
+    }
+
+.price {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .price h1 {
+        font-size: 4em;
+        background: -webkit-linear-gradient(#9308e3, #1a5ab9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .price input[type=button] {
+        color: white;
+        border: 0px;
+        font-weight: 700;
+        padding: 5px;
+        margin-left: 25%;
+        width: 50%;
+        margin-top: 20px;
+        font-size: 2em;
+        background-color: #9308e3;
+        border-radius: 10px;
+        transition: 0.5s ease-in-out;
+    }
+    .price input[type=button]:hover {
+            background-color: brown;
+    }
+
+    
+
+.spacing {
+    margin-top: 100px;
+    font-size: 0.8em;
+    width: 80%;
+}
+
+.ques {
+    margin: 0px 10vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.contactForm {
+    margin-top: 10vh;
+    width: 40%;
+}
+
+    .contactForm h1 {
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .contactForm .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 15px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        .contactForm .inputBox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        .contactForm .inputBox input:focus ~ span,
+        .contactForm .inputBox input:valid ~ span,
+        .contactForm .inputBox textarea:focus ~ span,
+        .contactForm .inputBox textarea:valid ~ span {
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+
+
+        .contactForm .inputBox input[type="submit"] {
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+.footer {
+    display: flex;
+    margin-top: 50px;
+    padding: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 100vw;
+    background-color: #F2F3F4;
+    justify-content: flex-start;
+}
+
+.footer > div {
+        width: 100%;
+    }
+
+
+
+.footer h1 {
+        display: inline-block;
+        font-size: 20px;
+        text-align: left;
+        font-weight: 500;
+    }
+
+.footer .first h4 {
+        position: relative;
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: left;
+        font-weight: 500;
+        color: #4e4f4e;
+    }
+
+.footer .second > div,
+.footer .third > div {
+        margin: 10px;
+    }
+
+.footer a {
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+    }
+
+.footer a:hover {
+            margin-left: 2px;
+            color: orangered;
+        }
+
+.footer i {
+        color: #ff4500;
+    }
+
+
+.container4,
+.ctop {
+    position: relative;
+    margin: auto;
+    width: 80vw;
+    padding: 50px;
+    text-align: center;
+}
+
+    .container4 h1 {
+        text-decoration: dotted underline;
+    }
+
+.ctop {
+    margin-top: 150px;
+    text-align: center;
+    color: orangered;
+}
+
+.contactpage {
+    padding-top:150px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+    .contactpage .contactForm {
+        width: 20vw;
+        margin-right: 10vw;
+    }
+
+.channel {
+    margin-top: 95px;
+    margin-left: 10vw;
+}
+
+.channelnames {
+    font-weight: 500;
+    font-size: 30px;
+    color: blue;
+}
+
+.imglinks {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+    .imglinks > div {
+        max-width: 25%;
+        margin-right: 20px;
+    }
+
+    .imglinks img {
+        padding: 5px;
+        width: 60px;
+        border: 0px;
+        border-radius: 50%;
+        transition: 0.3s ease-in;
+    }
+
+        .imglinks img:hover {
+            border: 5px solid #5441F8;
+        }
+

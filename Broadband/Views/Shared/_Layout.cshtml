@@ -1,0 +1,159 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Broadband</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    
+ </head>
+<body>
+    <header>
+        <div class="head">
+            <div class="content">
+                <img src="core/logo.png">
+                <div class="name">
+                    <h1>Khulna Internet Services<br>Limited</h1>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a asp-controller="Home" asp-action="Index">
+                                <h1>Home</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Index" asp-fragment="packages">
+                                <h1>Packages</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="About" asp-action="Index">
+                                <h1>About Us</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Contact" asp-action="Index">
+                                <h1>Contact Us</h1>
+                            </a>
+                        </li>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li>
+                                <a id="manage" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><h1 style="font-size:20px">Hi @UserManager.GetUserName(User)!</h1></a>
+                            </li>
+                            <li>
+                                <form id="logoutForm" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                    <button id="logout1" type="submit" style="
+                                            background: turquoise;
+                                            border:0px;
+                                            border-radius: 5px;
+                                            padding:10px;" onMouseOver="this.style.color='orangered'" onMouseOut="this.style.color='black'">
+                                        <i class="fa-solid fa-arrow-right-from-bracket fa-beat-fade fa-2x" style="color: #ff0000;"></i>
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a id="register" asp-area="Identity" asp-page="/Account/Register"><h1>Register</h1></a>
+                            </li>
+                            <li>
+                                <a id="login" asp-area="Identity" asp-page="/Account/Login"><h1>Login</h1></a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+            @RenderBody()
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <span><img src="core/logo.png" style="border-radius:30px;" height="40"></span>
+                <span>
+                    <h1>&nbsp&nbspKhulna Internet<br>&nbsp&nbspServices Limited</h1>
+                </span>
+                <br>
+                <h4>KUET Main Road, Khulna-9203</h4>
+                <br>
+                <br>
+                <h4 style="color:black;">QUALITY POLICY</h4>
+                        Facilitate seamless information flow<br>through innovative ICT Infrastructure and<br>services.
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+
+
+            <div class="second">
+                <h1 style="color:orangered; font-weight: 600;">Quick Links</h1><br>
+                <br><br>
+                <div>
+
+
+                    <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                    <span><a href="http://www.btrc.gov.bd/">BTRC</a></span>
+                </div>
+
+                <div>
+
+
+                    <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                    <span><a href="http://www.educationboard.gov.bd/">Ministry of Education Board</a></span>
+                </div>
+
+                <div>
+
+
+                    <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                    <span><a href="login.html">Login</a></span>
+                </div>
+
+                <div>
+
+
+                    <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                    <span><a href="?">FAQ</a></span>
+                </div>
+            </div>
+
+            <div class="third">
+                <h1 style="color:orangered; font-weight: 600;">Contact Us</h1><br><br><br>
+                <div>
+
+
+                    <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                    <span><a href="tel:+8801723266516">01723266516</a></span>
+                </div>
+
+                <div>
+
+
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <span><a href="mailto:support@kislbd.com">support@kislbd.com</a></span>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/060a8e08cb.js" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

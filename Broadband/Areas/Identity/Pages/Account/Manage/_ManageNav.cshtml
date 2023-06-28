@@ -1,0 +1,19 @@
+﻿@inject SignInManager<IdentityUser> SignInManager
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<IdentityUser> UserManager
+@inject UserManager<IdentityUser> RoleManager
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+<ul class="nav nav-pills flex-column">
+    <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
+    <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a></li>
+    
+    <li class="nav-item"><a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData">Personal data</a></li>
+    @if (User.IsInRole("Admin"))
+    {
+        <li class="nav-item"><a class="nav-link" asp-controller="Users" asp-action="Index">User List</a></li>
+        <li class="nav-item"><a class="nav-link" asp-controller="AppRole" asp-action="Index">App Roles</a></li>
+        <li class="nav-item"><a class="nav-link" asp-controller="UserMessages" asp-action="Index">Queries</a></li>
+    }
+</ul>

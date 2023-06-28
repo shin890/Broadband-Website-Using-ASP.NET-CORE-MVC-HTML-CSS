@@ -1,0 +1,48 @@
+﻿@model Broadband.Models.UserMessage
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="contactpage">
+        <div class="contactForm">
+            <form asp-action="Create">
+                <h1 style="font-weight: 700">Send Message</h1>
+                    <div class="inputBox">
+                        <input asp-for="Name" type="text" required="required">
+                        <span>Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input asp-for="Email" type="text" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea asp-for="Query" required="required"></textarea>
+                        <span>Type your query here...</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+            </form>
+
+        </div>
+
+
+
+        <div class="channel">
+            <h1>Other Channels to<br>Contact Us</h1>
+
+            <div class="imglinks">
+                <div><a href="https://messenger.com/"><img src="core/Facebook_Messenger_logo_2020.svg"></a></div>
+                <div><a href="https://whatsapp.com/"><img src="core/WhatsApp.svg"></a></div>
+                <div><a href="https://whatsapp.com/"><img src="core/Telegram_logo.svg"></a></div>
+                <div><a href="tel:01723266516"><img src="core/pngegg.png"></a></div>
+                <div><a href="mailto:support@kislbd.com"><img src="core/email-13765.png"></a></div>
+            </div>
+
+        </div>
+    </div>
+
+

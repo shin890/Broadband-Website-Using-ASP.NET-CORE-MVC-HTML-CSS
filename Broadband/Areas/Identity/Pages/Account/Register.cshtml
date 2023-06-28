@@ -1,0 +1,132 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+<link rel="stylesheet" href="~/css/login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container" id="container" style="min-height: 750px">
+    <div class ="form-container log-in-container">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h1>Create a new account</h1>
+            <br />
+            
+            <div>
+                <input asp-for="Input.Email" placeholder="Email" />
+                
+                
+            </div>
+
+             <div>
+                <input asp-for="Input.Name" placeholder="Name" />
+                
+                
+            </div>
+
+            <div>
+                <input asp-for="Input.Address" placeholder="Address" />
+
+                
+            </div>
+
+            <div>
+                <input asp-for="Input.PhoneNumber" placeholder="Phone Number" />
+
+                
+            </div>
+            
+            <div style="margin:8px 0;">
+                <label style="color:orangered;font-size:1em;font-weight:600;">Select Package</label><br />
+                <select asp-for="Input.Packages" placeholder="Packages" 
+                style="margin-top:10px;width:210px;height:30px;
+                      text-align: center; border: 0px; background: #eee; border-radius: 5px;">
+                    <option>Gold+</option>
+                    <option>Platinum+</option>
+                    <option>Diamond+</option>
+                    <option>Sapphire+</option>
+
+
+                </select>
+                
+
+            
+            </div>
+            
+            <div>
+                <input asp-for="Input.Password" placeholder="Password" />
+                
+            </div>
+            <div>
+                <input asp-for="Input.ConfirmPassword" placeholder="Confirm Password" />
+                
+            </div><br />
+            <button id="registerSubmit" type="submit">Register</button><br />
+            <div>
+                <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Already a user? Sign In</a>
+            </div>
+        </form>
+        
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-right">
+                <h1>KISL</h1>
+                <h4>Get connected to the world with us</h4>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div style="color:orangered;font-size:1em;text-align:center;font-weight:600;padding:20px;">
+<div asp-validation-summary="ModelOnly" ></div>
+<span asp-validation-for="Input.Email"></span><br />
+<span asp-validation-for="Input.Name"></span><br />
+<span asp-validation-for="Input.Address"></span><br />
+<span asp-validation-for="Input.PhoneNumber"></span><br />
+<span asp-validation-for="Input.Packages"></span>
+<span asp-validation-for="Input.Password"></span>
+<span asp-validation-for="Input.ConfirmPassword"></span>
+</div>
+
+@*<div class="container" id="container" style="min-height:650px">
+    <div class="form-container log-in-container">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h1>Create a New Account</h1><br>
+            <div>
+                <input asp-for="Input.Email" placeholder="Email" />
+                <span asp-validation-for="Input.Email"></span>
+            </div>
+
+            <div>
+            <input asp-for="Input.Password" placeholder="Password" />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div>
+                <input asp-for="Input.ConfirmPassword" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+
+
+            <br />
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            <div>
+                <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Already a user? Sign In</a>
+            </div>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-right">
+                <h1>KISL</h1>
+                <h4>Get connected to the world with us</h4>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

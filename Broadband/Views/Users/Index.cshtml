@@ -1,0 +1,59 @@
+﻿@using Broadband.Models
+@model IEnumerable<Login>
+@{
+    ViewData["Title"] = "Index";
+    
+}
+
+<h1>Users List</h1>
+<hr>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>
+                Email
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Package
+            </th>
+            <th>
+                Phone Number
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>
+                    @user.Name
+                </td>
+
+                <td>
+                    @user.Email
+                </td>
+                <td>
+                    @user.Address
+                </td>
+                <td>
+                    @user.Packages
+                </td>
+                
+                <td>
+                    @user.PhoneNumber
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-danger">Edit</a> 
+                    @*<a asp-action="Delete" asp-route-id="@user.Id" class="btn btn-danger">Delete</a>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Register">Create New</a>
+<a class="btn btn-danger" asp-area="Identity" asp-page="/Account/Login">Go Back</a>

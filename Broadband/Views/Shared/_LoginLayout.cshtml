@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <style>
+        body {
+            background-image: url("../core/internet-1170x658.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .front{
+            text-align:center;
+            color:darkblue;
+            margin-bottom:25px;
+            font-size: 36px;
+        }
+        
+
+
+    </style>
+</head>
+
+
+
+<body>
+    
+    <h1 class="front">Login Portal</h1>
+    
+    <div>
+        @RenderBody()
+    </div>
+    <script src="https://kit.fontawesome.com/060a8e08cb.js" crossorigin="anonymous"></script>
+</body>
+@await RenderSectionAsync("Scripts", required: false)
+
+</html>
+
