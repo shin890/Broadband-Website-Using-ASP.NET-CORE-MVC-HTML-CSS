@@ -1,10 +1,10 @@
 # Broadband Project using ASP.NET CORE MVC, HTML, CSS
 
-#Fronted
+# Fronted
 ~Used HTML
 ~Vanilla CSS all over the project except in the Login Pages. I have used Bootstrap there.
 
-#Backend
+# Backend
 ~Used ASP.NET CORE 6.0 MVC
 ~Used Identity framework to create Login pages
 ~Roles Based Authorization eg Admin and User
