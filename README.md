@@ -3,7 +3,7 @@
 # Frontend
 * HTML
 * Vanilla CSS all over the project except in the Login Pages.
-* Bootstrap used
+* Bootstrap used in login pages
 
 # Backend
 * ASP.NET CORE 6.0 MVC
