@@ -1,4 +1,4 @@
-# Broadband Project using ASP.NET CORE MVC, HTML, CSS
+# Broadband Website Project using ASP.NET CORE MVC, HTML and CSS
 
 # Frontend
 * HTML
