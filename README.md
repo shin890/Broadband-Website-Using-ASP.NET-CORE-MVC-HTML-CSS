@@ -17,4 +17,4 @@
 ## Cookies Implemented
 
 # Demo Video
-<video src="demo_website_video_compressed.mp4" width="600" controls></video>
+<video src="https://raw.githubusercontent.com/shin890/Broadband-Website-Using-ASP.NET-CORE-MVC-HTML-CSS/99834e0e9911f613a5fe95094d7d618ba4dae4f5/demo_website_video_compressed.mp4" width="600" controls></video>
