@@ -17,4 +17,4 @@
 ## Cookies Implemented
 
 # Demo Video
-<video src="demo_website_video_compressed.mp4" width="100%" controls></video>
+<video src="demo_website_video_compressed.mp4" width="600" controls></video>
