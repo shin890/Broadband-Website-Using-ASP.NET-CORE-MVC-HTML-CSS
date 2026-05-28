@@ -19,4 +19,4 @@
 * Login is preserved even if the browser is closed.
 
 ## Demo Video (Click the image below)
-<a href="demo_website_video_compressed.mp4"><img src="screenshot.jpg" alt="Watch the demo" width="90%"/></a>
+<a href="demo_website_video_compressed.mp4"><img src="screenshot.jpg" alt="Watch the demo" /></a>
