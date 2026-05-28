@@ -17,4 +17,4 @@
 ## Cookies Implemented
 
 # Demo Video
-<video src="1909051_BroadBand%20website.mp4" width="600" controls></video>
+<video src="demo_website_video_compressed.mp4" width="100%" controls></video>
