@@ -16,5 +16,5 @@
 * Admin Credentials `Email: admin@gmail.com  Password: test1234`
 ## Cookies Implemented
 
-# Demo Video
-[![Watch the demo](screenshot.jpg)](demo_website_video_compressed.mp4)
+# Demo Video (Click the image below)
+<a href="demo_website_video_compressed.mp4"><img src="screenshot.jpg" alt="Watch the demo" width="90%"/></a>
