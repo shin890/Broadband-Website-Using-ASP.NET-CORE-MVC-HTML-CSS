@@ -1,20 +1,22 @@
 # Broadband Website Project using ASP.NET CORE MVC, HTML and CSS
 
-# Frontend
+## Frontend
 * HTML
 * Vanilla CSS all over the project except in the Login Pages.
 * Bootstrap used in login pages
 
-# Backend
+## Backend
 * ASP.NET CORE 6.0 MVC
 * Connected Database
 
-# More Informations
+## More Informations
 * Used Identity framework to create Login pages
 * Roles Based Authorization eg Admin and User
 * Restricted Usage to few pages using role based authorization
 * Admin Credentials `Email: admin@gmail.com  Password: test1234`
-## Cookies Implemented
 
-# Demo Video (Click the image below)
+## Session Persistence
+* Login is preserved even if the browser is closed.
+
+## Demo Video (Click the image below)
 <a href="demo_website_video_compressed.mp4"><img src="screenshot.jpg" alt="Watch the demo" width="90%"/></a>
