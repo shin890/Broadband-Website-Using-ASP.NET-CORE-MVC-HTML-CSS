@@ -16,5 +16,5 @@
 * Admin Credentials `Email: admin@gmail.com  Password: test1234`
 ## Cookies Implemented
 
-##Demo Video
-<video src="https://github.com/shin890/Broadband-Website-Using-ASP.NET-CORE-MVC-HTML-CSS/blob/Branch/1909051_BroadBand%20website.mp4" width="600" controls></video>
+# Demo Video
+<video src="1909051_BroadBand website.mp4" width="600" controls></video>
