@@ -319,12 +319,6 @@ This project was developed as part of **CSE 3210: Web Programming Laboratory** t
 - All database operations use Entity Framework Core with async/await patterns
 - Bootstrap is selectively used only for authentication UI consistency
 
-## 🔄 Recent Updates
-
-- Added GitHub Actions workflow for .NET project CI/CD
-- Fixed demo video link formatting
-- Database schema enhancements for multi-device support
-
 ---
 
 **Developed By:** Shuva Podder  
