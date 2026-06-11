@@ -1,6 +1,6 @@
 # Broadband Website - ASP.NET Core MVC
 
-A comprehensive broadband/ISP (Internet Service Provider) management website built with ASP.NET Core 6.0 MVC. This project was developed as part of the Academic Course **CSE 3210: Web Programming Laboratory**.
+A comprehensive broadband/ISP (Internet Service Provider) management website built with ASP.NET Core 6.0 MVC. This project was developed as part of the Academic Course **CSE 3110: Web Programming Laboratory**.
 
 ## 📋 Project Overview
 
@@ -318,9 +318,3 @@ This project was developed as part of **CSE 3210: Web Programming Laboratory** t
 - Session cookies persist across browser sessions for convenience
 - All database operations use Entity Framework Core with async/await patterns
 - Bootstrap is selectively used only for authentication UI consistency
-
----
-
-**Developed By:** Shuva Podder  
-**Framework:** ASP.NET Core 6.0 MVC  
-**Academic Course:** CSE 3110 - Web Programming Laboratory
